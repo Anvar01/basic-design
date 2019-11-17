@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="rect"></div>
+        <div class="sidebar">
+          <a href="#" class="active">Home</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+        <div class ="wrapper">
+        <h1 style="text-decoration:underline; text-decoration-color: grey" class = "title">B1</h1>
+        <div class="map-wrapper">
+          <button id = "b" class="b" onclick="open_popup('popup')">Press me!</button>
+          <popup id = "popup" class = "popup">
+              <contents class = "popup_contents">
+                  <span class = "close" onclick="close_popup('popup')">X</span>
+                  <p>b101</p>
+              </contents>
+          </popup>
+
+
+          <button id = "b" class="b" onclick="open_popup('popup2')">Press me!</button>
+          <popup id = "popup2" class = "popup">
+              <contents class = "popup_contents">
+                  <span class = "close" onclick="close_popup('popup2')">X</span>
+                  <p>B102</p>
+              </contents>
+          </popup>
+        </div>
+
+
+        <script>
+                function open_popup(sos){
+                    document.getElementById(sos).style.display="block";
+                }
+                function close_popup(sos){
+                     document.getElementById(sos).style.display = "none";
+                }
+        </script>
+      </div>
+    </body>
+</html>

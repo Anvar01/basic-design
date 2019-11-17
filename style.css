@@ -1,0 +1,86 @@
+.rect{
+  height:100%;
+  width:20%;
+  background-color: rgb(204, 46, 0);
+  border: 1px solid #000;
+  position: absolute;
+  left:0px;
+  top:0px;
+  z-index: -1;
+}
+body{
+  background-color: rgba(60,60,60,0.2);
+}
+.wrapper{
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  width:40%;
+  text-align:center;
+}
+
+.login{
+}
+.login input{
+  width: 300px;
+ height: 45px;
+}
+.login_button{
+  background-color: rgb(204, 46, 0);
+  border: none;
+  width: 350px;
+ height: 50px;
+}
+.login.login_attr{
+  width: 400px;
+  border: 20px;
+}
+.title{
+  font-size: 40px;
+  color:rgb(204, 46, 0);
+  margin:30px;
+}
+
+.b{
+ background-color: white;
+ color:black;
+ border:none;
+}
+.b:hover{
+  background-color: rgb(204, 46, 0);
+  color:white;
+   border:none;
+}
+.popup{
+  display:none;
+  background-color: yellow;
+  z-index: 1;
+}
+.sidebar{
+  color: black;
+  padding-top: 50px;
+  width:200px;
+  position:absolute;
+  left:0;
+  text-align: center;
+  font-size:50px;
+  text-decoration: none;
+}
+.sidebar a{
+  color: white;
+  display: block;
+  padding-top: 25%;
+  text-decoration: none;
+}
+.sidebar a:hover{
+  background-color: black;
+  width:153%;
+  left:-10;
+}
+.map-wrapper{
+  position:relative;
+  left:50px;
+  width:400px;
+  height:300px;
+  background-color: grey;
+}

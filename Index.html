@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class ="wrapper">
+        <h1 class="title">LOGIN<h1>
+        <form name="login">
+            <div class="login">
+                <input  type="text" placeholder="Student ID" name="userid" required><br>
+                <input  type="password" placeholder="PW" name="password" required><br>
+                <input class ="login_button" type="button" onclick="check(this.form)" value="Login">
+            </div>
+        </form>
+      </div>
+        <script>
+
+            function check(form){
+
+                if(form.userid.value=="Anvar" && form.password.value=="12345"){
+
+                    open("floor.html","_self");
+
+                }
+                else{
+
+                    alert("Incorrect information");
+
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
